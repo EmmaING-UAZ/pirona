@@ -12,22 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden">
+<body>
+
+    <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
 
     <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
         <div class="container mx-auto flex justify-between items-center p-4 text-white">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
-            <nav class="hidden md:flex space-x-8 items-center font-semibold">
-                <a href="servicios.html" class="text-orange-500">Servicios</a>
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
                 <a href="proyectos.html">Proyectos</a>
                 <a href="jugueteria.html">Juguetería</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
-                 <i class="fas fa-bars fa-lg"></i>
+            <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="btn-primary hidden md:inline-block">
+                Cotiza tu Evento
+            </a>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none relative h-6 w-6">
+                 <i class="fas fa-bars fa-lg absolute"></i>
+                 <i class="fas fa-times fa-lg absolute"></i>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden nav-links">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Inicio</a>
             <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
             <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
             <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
@@ -49,14 +61,14 @@
                 <h1 class="text-4xl md:text-5xl font-bold">Servicios de Alto Impacto</h1>
                 <p class="mt-4 text-xl text-slate-300 max-w-2xl mx-auto">Diseñamos experiencias únicas para cada ocasión.</p>
             </div>
-            
+
             <div class="space-y-24">
-                
+
                 <section id="castillos" class="fade-in-on-scroll">
                     <div class="md:flex justify-start">
                         <div class="service-card w-full md:w-5/6 lg:w-4/5">
                             <div class="service-image-container">
-                                <img src="assets/images/castillo.png" alt="Castillo pirotécnico con la letra N en llamas" class="service-image">
+                                <img src="assets/images/image_bd6385.jpg" alt="Castillo pirotécnico iluminando la noche" class="service-image">
                             </div>
                             <div class="service-text-container">
                                 <h2 class="service-title">Castillos</h2>
@@ -75,9 +87,9 @@
                             <iframe src="https://www.youtube.com/embed/ScXXc_K7y6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
                         </div>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <img src="https://via.placeholder.com/400x300?text=Castillo+1" alt="Detalle de un castillo de día" class="rounded-lg shadow-lg">
-                            <img src="https://via.placeholder.com/400x300?text=Castillo+2" alt="Detalle de un castillo de noche" class="rounded-lg shadow-lg">
-                            <img src="https://via.placeholder.com/400x300?text=Castillo+3" alt="Detalle de un castillo en evento" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd63a2.jpg" alt="Detalle de un castillo de día" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd63c4.jpg" alt="Detalle de un castillo de noche" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd6385.jpg" alt="Detalle de un castillo en evento" class="rounded-lg shadow-lg">
                         </div>
                         <div class="text-center mt-12">
                             <a href="https://wa.me/5218662362913?text=Hola,%20me%20interesa%20el%20servicio%20de%20Castillos." target="_blank" class="btn-secondary">
@@ -91,7 +103,7 @@
                     <div class="md:flex justify-end">
                         <div class="service-card w-full md:w-5/6 lg:w-4/5 md:flex-row-reverse">
                              <div class="service-image-container">
-                                <img src="assets/images/piromusical.png" alt="Show Piromusical con fuegos artificiales verdes y dorados" class="service-image">
+                                <img src="assets/images/image_bd63a2.jpg" alt="Show Piromusical con fuegos artificiales verdes y dorados" class="service-image">
                             </div>
                             <div class="service-text-container">
                                 <h2 class="service-title">Piromusicales</h2>
@@ -110,9 +122,9 @@
                             <iframe src="https://www.youtube.com/embed/ScXXc_K7y6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
                         </div>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <img src="https://via.placeholder.com/400x300?text=Piromusical+1" alt="Show piromusical en una boda" class="rounded-lg shadow-lg">
-                            <img src="https://via.placeholder.com/400x300?text=Piromusical+2" alt="Fuegos artificiales sincronizados" class="rounded-lg shadow-lg">
-                            <img src="https://via.placeholder.com/400x300?text=Piromusical+3" alt="Equipo de control para piromusical" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd63c4.jpg" alt="Show piromusical en una boda" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd6385.jpg" alt="Fuegos artificiales sincronizados" class="rounded-lg shadow-lg">
+                            <img src="assets/images/image_bd63a2.jpg" alt="Equipo de control para piromusical" class="rounded-lg shadow-lg">
                         </div>
                         <div class="text-center mt-12">
                             <a href="https://wa.me/5218662362913?text=Hola,%20me%20interesa%20el%20servicio%20de%20Piromusicales." target="_blank" class="btn-secondary">
@@ -126,7 +138,7 @@
                      <div class="md:flex justify-start">
                         <div class="service-card w-full md:w-5/6 lg:w-4/5">
                             <div class="service-image-container">
-                                <img src="assets/images/efectos.png" alt="Explosión de fuegos artificiales blancos y dorados" class="service-image">
+                                <img src="assets/images/image_bd63c4.jpg" alt="Explosión de fuegos artificiales blancos y dorados" class="service-image">
                             </div>
                             <div class="service-text-container">
                                 <h2 class="service-title">Efectos Especiales</h2>
@@ -145,9 +157,9 @@
                             <iframe src="https://www.youtube.com/embed/ScXXc_K7y6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
                         </div>
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                           <img src="https://via.placeholder.com/400x300?text=Efecto+1" alt="Chispas frías en una boda" class="rounded-lg shadow-lg">
-                           <img src="https://via.placeholder.com/400x300?text=Efecto+2" alt="Cascada de fuego en un escenario" class="rounded-lg shadow-lg">
-                           <img src="https://via.placeholder.com/400x300?text=Efecto+3" alt="Humo de colores en un concierto" class="rounded-lg shadow-lg">
+                           <img src="assets/images/image_bd6385.jpg" alt="Chispas frías en una boda" class="rounded-lg shadow-lg">
+                           <img src="assets/images/image_bd63a2.jpg" alt="Cascada de fuego en un escenario" class="rounded-lg shadow-lg">
+                           <img src="assets/images/image_bd63c4.jpg" alt="Humo de colores en un concierto" class="rounded-lg shadow-lg">
                         </div>
                         <div class="text-center mt-12">
                             <a href="https://wa.me/5218662362913?text=Hola,%20me%20interesa%20el%20servicio%20de%20Efectos%20Especiales." target="_blank" class="btn-secondary">
@@ -160,11 +172,66 @@
         </div>
     </main>
 
-    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400 mt-24">
-        <div class="container mx-auto">
-             <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+<footer class="bg-gray-900 text-slate-300 py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12 mb-4">
+                </a>
+                <p class="text-slate-400">Iluminando tus momentos más especiales con espectáculos que inspiran asombro.</p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Navegación</h3>
+                <ul class="space-y-2">
+                    <li><a href="servicios.html" class="hover:text-orange-500 transition-colors">Servicios</a></li>
+                    <li><a href="proyectos.html" class="hover:text-orange-500 transition-colors">Proyectos</a></li>
+                    <li><a href="jugueteria.html" class="hover:text-orange-500 transition-colors">Juguetería</a></li>
+                    <li><a href="contacto.html" class="hover:text-orange-500 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto</h3>
+                <ul class="space-y-2 text-slate-400">
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+                        <span>866 236 2913</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-orange-500 mr-2"></i>
+                        <span>contacto@pirona.com.mx</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Síguenos</h3>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-tiktok fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </footer>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-slate-500">
+            <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>PIRONA - Espectáculos Pirotécnicos en México</title>
     <meta name="description" content="Diseñamos y producimos espectáculos de pirotecnia inolvidables para eventos en todo México. Castillos, piromusicales y efectos especiales a tu medida.">
     <meta name="keywords" content="pirotecnia, fuegos artificiales, castillos pirotécnicos, piromusicales, eventos, bodas, fiestas, México">
@@ -15,16 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-    <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-600 transition-transform transform hover:scale-110">
+    <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp fa-2x"></i>
     </a>
 
     <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
         <div class="container mx-auto flex justify-between items-center p-4 text-white">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
-            <nav class="hidden md:flex space-x-8 items-center font-semibold">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold nav-links">
+                <a href="index.html">Inicio</a>
                 <a href="servicios.html">Servicios</a>
                 <a href="proyectos.html">Proyectos</a>
                 <a href="jugueteria.html">Juguetería</a>
@@ -33,11 +36,13 @@
             <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="btn-primary hidden md:inline-block">
                 Cotiza tu Evento
             </a>
-            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
-                 <i class="fas fa-bars fa-lg"></i>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none relative h-6 w-6">
+                 <i class="fas fa-bars fa-lg absolute"></i>
+                 <i class="fas fa-times fa-lg absolute"></i>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden nav-links">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Inicio</a>
             <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
             <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
             <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
@@ -68,7 +73,7 @@
 
         <section id="sobre-nosotros" class="py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
-                
+
                 <div class="mb-16 fade-in-on-scroll">
                     <h2 class="text-4xl md:text-5xl font-bold">Sobre Nosotros</h2>
                     <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto">
@@ -113,12 +118,67 @@
             </div>
         </section>
     </main>
-    
-    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400">
-        <div class="container mx-auto">
+
+<footer class="bg-gray-900 text-slate-300 py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12 mb-4">
+                </a>
+                <p class="text-slate-400">Iluminando tus momentos más especiales con espectáculos que inspiran asombro.</p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Navegación</h3>
+                <ul class="space-y-2">
+                    <li><a href="servicios.html" class="hover:text-orange-500 transition-colors">Servicios</a></li>
+                    <li><a href="proyectos.html" class="hover:text-orange-500 transition-colors">Proyectos</a></li>
+                    <li><a href="jugueteria.html" class="hover:text-orange-500 transition-colors">Juguetería</a></li>
+                    <li><a href="contacto.html" class="hover:text-orange-500 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto</h3>
+                <ul class="space-y-2 text-slate-400">
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+                        <span>866 236 2913</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-orange-500 mr-2"></i>
+                        <span>contacto@pirona.com.mx</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Síguenos</h3>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-tiktok fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-slate-500">
             <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <script src="assets/js/main.js"></script>
 </body>
