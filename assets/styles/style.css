@@ -1,0 +1,105 @@
+/* --- ESTILOS GLOBALES Y DE BASE --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1a2e; /* <<--- AQUÍ ESTÁ EL FONDO AZUL OSCURO */
+    color: #f0f0f0;
+}
+
+/* --- ESTILOS DE COMPONENTES REUTILIZABLES --- */
+.btn-primary {
+    @apply bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105 duration-300 shadow-lg;
+}
+
+.btn-secondary {
+    @apply bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105 duration-300 shadow-lg;
+}
+
+/* --- NAVEGACIÓN Y HEADER --- */
+header nav a {
+    position: relative;
+}
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f59e0b; /* Naranja */
+    transition: width 0.3s ease-out;
+}
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* --- ANIMACIONES DE SCROLL --- */
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- ESTILOS PARA LA PÁGINA DE SERVICIOS --- */
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a2a4c;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+.service-image-container { width: 100%; height: 250px; flex-shrink: 0; overflow: hidden; }
+.service-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease-out; }
+.service-card:hover .service-image { transform: scale(1.05); }
+.service-text-container { padding: 2rem; }
+.service-title { font-size: 2rem; font-weight: 900; color: #f59e0b; margin-bottom: 1rem; }
+.service-description { font-size: 1.125rem; color: #cbd5e1; }
+
+@media (min-width: 768px) {
+    .service-card { flex-direction: row; }
+    .service-image-container { width: 50%; height: auto; }
+    .service-text-container { width: 50%; }
+    .service-title { font-size: 2.5rem; }
+}
+
+#service-nav {
+    position: sticky;
+    top: 72px; /* Altura del header principal */
+    z-index: 30;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+#service-nav.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- ESTILOS PARA OTRAS PÁGINAS (PROYECTOS, JUGUETERÍA) --- */
+.project-card, .product-card {
+    @apply bg-[#1a2a4c] rounded-lg shadow-lg overflow-hidden transition-all duration-300;
+}
+.project-card:hover, .product-card:hover {
+    @apply transform -translate-y-2 shadow-2xl;
+}
+.image-wrapper { @apply overflow-hidden; }
+.image-wrapper img { @apply transition-transform duration-500; }
+.project-card:hover .image-wrapper img, .product-card:hover .image-wrapper img {
+    @apply scale-105;
+}
+
+/* --- [NUEVO] ESTILOS PARA FORMULARIO DE CONTACTO --- */
+.form-input {
+    @apply w-full bg-blue-900 bg-opacity-40 border border-slate-600 rounded-lg py-2 px-4 text-white placeholder-slate-400;
+    @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-shadow;
+}

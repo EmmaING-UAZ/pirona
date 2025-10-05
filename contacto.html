@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto para Eventos y Cotizaciones de Pirotecnia | PIRONA</title>
+    <meta name="description" content="Contacta a Pirona para cotizar tu próximo evento. Envíanos un mensaje a través de nuestro formulario o contáctanos por WhatsApp. Consulta nuestras preguntas frecuentes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+
+     <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
+         <div class="container mx-auto flex justify-between items-center p-4 text-white">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="servicios.html">Servicios</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="jugueteria.html">Juguetería</a>
+                <a href="contacto.html" class="text-orange-500">Contacto</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
+                 <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
+            <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
+            <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
+            <a href="contacto.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contacto</a>
+        </div>
+    </header>
+
+    <main class="pt-32">
+        <section id="contacto" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 fade-in-on-scroll">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Contacta con Nosotros</h1>
+                    <p class="text-gray-400 max-w-2xl mx-auto">¿Listo para hacer que tu evento sea inolvidable? Déjanos un mensaje.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+                    <div class="md:w-1/2 w-full">
+                        <div class="bg-blue-900 bg-opacity-40 p-8 rounded-lg mb-6 fade-in-on-scroll">
+                            <h3 class="text-xl font-bold flex items-center"><i class="fab fa-whatsapp text-green-500 mr-3"></i>WhatsApp</h3>
+                            <p class="text-lg text-gray-300">866 236 2913</p>
+                        </div>
+                        <div class="bg-blue-900 bg-opacity-40 p-8 rounded-lg fade-in-on-scroll" style="transition-delay: 150ms;">
+                            <h3 class="text-xl font-bold flex items-center"><i class="fas fa-envelope text-orange-500 mr-3"></i>Correo Electrónico</h3>
+                            <p class="text-lg text-gray-300">contacto@pirona.com.mx</p>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 w-full fade-in-on-scroll" style="transition-delay: 300ms;">
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
+                            <div class="mb-4">
+                                <label for="name" class="block text-slate-300 mb-2">Tu Nombre</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-slate-300 mb-2">Tu Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-slate-300 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full btn-primary text-lg">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="py-20 bg-black bg-opacity-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 fade-in-on-scroll">
+                    <h2 class="text-4xl font-bold">Nuestra Ubicación</h2>
+                    <p class="mt-2 text-gray-400">Ofrecemos servicio a nivel nacional.</p>
+                </div>
+                <div class="h-96 rounded-lg overflow-hidden shadow-2xl fade-in-on-scroll">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.344440625368!2d-100.9272986854196!3d25.42676998378939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880d3811f3d67b%3A0x7d2e078c1b6f001!2sCatedral%20de%20Santiago%2C%20Saltillo!5e0!3m2!1ses!2smx!4v1664589980000" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl font-bold text-center mb-12 fade-in-on-scroll">Preguntas Frecuentes</h2>
+                <div class="space-y-4">
+                    <details class="bg-[#1a2a4c] p-4 rounded-lg cursor-pointer fade-in-on-scroll">
+                        <summary class="font-semibold text-lg hover:text-orange-500 transition-colors">¿En qué ciudades trabajan?</summary>
+                        <p class="mt-2 text-slate-300">Ofrecemos nuestros servicios de espectáculos pirotécnicos principalmente en la frontera y tenemos la capacidad de atender eventos en todo el territorio nacional. Contáctanos para conocer la cobertura en tu ciudad.</p>
+                    </details>
+                    <details class="bg-[#1a2a4c] p-4 rounded-lg cursor-pointer fade-in-on-scroll" style="transition-delay: 150ms;">
+                        <summary class="font-semibold text-lg hover:text-orange-500 transition-colors">¿Cuál es la temporada de venta de juguetería?</summary>
+                        <p class="mt-2 text-slate-300">Nuestra juguetería pirotécnica está disponible para venta al público únicamente durante la temporada alta, que comprende desde el mes de septiembre hasta finales de diciembre de cada año.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400">
+        <div class="container mx-auto">
+             <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Destacados de Pirotecnia | PIRONA</title>
+    <meta name="description" content="Explora nuestro portafolio de proyectos pirotécnicos destacados. Ve cómo hemos iluminado bodas, festivales y eventos corporativos.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+
+    <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center p-4 text-white">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="servicios.html">Servicios</a>
+                <a href="proyectos.html" class="text-orange-500">Proyectos</a>
+                <a href="jugueteria.html">Juguetería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
+                 <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
+            <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
+            <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
+            <a href="contacto.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contacto</a>
+        </div>
+    </header>
+
+    <main class="pt-32 container mx-auto px-6">
+        <div class="text-center mb-16 fade-in-on-scroll">
+            <h1 class="text-4xl md:text-5xl font-bold">Proyectos Destacados</h1>
+            <p class="mt-4 text-xl text-slate-300 max-w-2xl mx-auto">Un vistazo a algunos de nuestros trabajos más memorables.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="project-card fade-in-on-scroll">
+                <div class="image-wrapper h-64">
+                    <img src="https://via.placeholder.com/600x400?text=Boda+en+Zacatecas" alt="Boda mágica iluminada con pirotecnia" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-orange-500">Boda Mágica en Zacatecas</h2>
+                    <p class="mt-2 text-slate-300">Un show piromusical sincronizado con la canción de los novios, creando un cierre de noche espectacular y emotivo que los invitados nunca olvidarán.</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in-on-scroll" style="transition-delay: 150ms;">
+                <div class="image-wrapper h-64">
+                    <img src="https://via.placeholder.com/600x400?text=Feria+Nacional" alt="Castillo pirotécnico en la feria nacional" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-orange-500">Feria Nacional 2024</h2>
+                    <p class="mt-2 text-slate-300">Diseñamos y construimos el castillo principal para la clausura de la feria, un espectáculo de 15 minutos que combinó tradición con efectos modernos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400 mt-24">
+         <div class="container mx-auto">
+             <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

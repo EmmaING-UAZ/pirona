@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PIRONA - Espectáculos Pirotécnicos en México</title>
+    <meta name="description" content="Diseñamos y producimos espectáculos de pirotecnia inolvidables para eventos en todo México. Castillos, piromusicales y efectos especiales a tu medida.">
+    <meta name="keywords" content="pirotecnia, fuegos artificiales, castillos pirotécnicos, piromusicales, eventos, bodas, fiestas, México">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+
+    <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-600 transition-transform transform hover:scale-110">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center p-4 text-white">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold">
+                <a href="servicios.html">Servicios</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="jugueteria.html">Juguetería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="btn-primary hidden md:inline-block">
+                Cotiza tu Evento
+            </a>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
+                 <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
+            <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
+            <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
+            <a href="contacto.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="min-h-screen flex items-center relative container mx-auto px-6 pt-32 pb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-7xl font-black uppercase leading-tight">
+                        Hacemos <span class="text-orange-500">Magia</span> con Fuego
+                    </h1>
+                    <p class="mt-6 text-xl text-slate-300 max-w-lg">
+                        Transformamos celebraciones en espectáculos legendarios. Cada evento es un lienzo, el cielo es nuestro escenario.
+                    </p>
+                    <a href="contacto.html" class="mt-8 inline-block btn-primary text-lg">
+                        Cotiza Tu Espectáculo
+                    </a>
+                </div>
+                <div class="relative h-full hidden lg:block">
+                     <img src="assets/images/efectos.png" alt="Fuegos artificiales blancos y dorados explotando en el cielo" class="absolute top-0 right-0 w-[500px] h-auto rounded-xl shadow-2xl transform rotate-3">
+                     <img src="assets/images/piromusical.png" alt="Múltiples fuegos artificiales de colores verde y rojo" class="absolute bottom-0 right-20 w-[300px] h-auto rounded-xl shadow-2xl transform -rotate-6">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                
+                <div class="mb-16 fade-in-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold">Sobre Nosotros</h2>
+                    <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto">
+                        Somos una empresa familiar con más de 20 años de experiencia, dedicada a crear momentos inolvidables a través de espectáculos pirotécnicos seguros y de alta calidad. Combinamos la artesanía tradicional con la última tecnología para superar tus expectativas.
+                    </p>
+                </div>
+
+                <div class="fade-in-on-scroll">
+                    <h2 class="text-4xl md:text-5xl font-bold">Nuestra Historia</h2>
+                    <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto">
+                        Fundada por la pasión de iluminar el cielo, Pirona nació del sueño de llevar alegría y asombro a cada celebración. Lo que comenzó como un pequeño taller, hoy es un referente en la industria, manteniendo siempre nuestros valores de seguridad, arte y compromiso.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resumen-servicios" class="py-20 bg-black bg-opacity-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold">Servicios de Alto Impacto</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#1a2a4c] p-8 rounded-lg text-center fade-in-on-scroll hover:bg-blue-900/40 transition-colors">
+                        <i class="fas fa-chess-rook fa-3x text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Castillos</h3>
+                        <p class="text-slate-300 mb-6">Estructuras monumentales que pintan el cielo con secuencias de luz y sonido.</p>
+                        <a href="servicios.html#castillos" class="text-orange-500 font-bold hover:underline">Ver más →</a>
+                    </div>
+                    <div class="bg-[#1a2a4c] p-8 rounded-lg text-center fade-in-on-scroll" style="transition-delay: 150ms;">
+                        <i class="fas fa-music fa-3x text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Piromusicales</h3>
+                        <p class="text-slate-300 mb-6">Espectáculos sincronizados donde los fuegos artificiales danzan al ritmo de la música.</p>
+                        <a href="servicios.html#piromusicales" class="text-orange-500 font-bold hover:underline">Ver más →</a>
+                    </div>
+                    <div class="bg-[#1a2a4c] p-8 rounded-lg text-center fade-in-on-scroll" style="transition-delay: 300ms;">
+                        <i class="fas fa-fire fa-3x text-orange-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">Efectos Especiales</h3>
+                        <p class="text-slate-300 mb-6">Chispas, humo y cascadas de luz para producciones y eventos de alto impacto.</p>
+                        <a href="servicios.html#efectos-especiales" class="text-orange-500 font-bold hover:underline">Ver más →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400">
+        <div class="container mx-auto">
+            <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
