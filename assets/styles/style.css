@@ -10,6 +10,34 @@ body {
     @apply bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105 duration-300 shadow-lg;
 }
 
+.btn-naranja {
+    /* --- Estilos principales --- */
+    background-color: #f59e0b; /* Color naranja específico que pediste */
+    color: white;             /* Color del texto */
+    padding: 10px 24px;       /* Espaciado interno (vertical y horizontal) */
+    border-radius: 9999px;    /* Bordes completamente redondeados */
+    text-decoration: none;    /* Quita el subrayado del enlace */
+    font-weight: bold;        /* Texto en negritas */
+    
+    /* --- Estilos adicionales para mejor comportamiento --- */
+    border: none;             /* Sin borde */
+    cursor: pointer;          /* Muestra el cursor de mano */
+    text-align: center;       /* Centra el texto (por si acaso) */
+
+    /* --- Efecto de transición suave --- */
+    transition: background-color 0.3s ease;
+}
+
+/* --- Efecto al pasar el cursor por encima (hover) --- */
+.btn-naranja:hover {
+    background-color: #d97706; /* Un tono de naranja un poco más oscuro */
+}
+
+.ult-btn {
+    margin-bottom: 3.5rem; /* Espacio inferior para separar del contenido siguiente */
+    display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
+}
+
 .btn-secondary {
     @apply bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-transform transform hover:scale-105 duration-300 shadow-lg;
 }
@@ -98,10 +126,20 @@ header nav a:hover::after {
     @apply scale-105;
 }
 
-/* --- [NUEVO] ESTILOS PARA FORMULARIO DE CONTACTO --- */
+/* --- ESTILOS PARA FORMULARIO DE CONTACTO --- */
+
+.form-label {
+    @apply block text-slate-300 mb-2 font-semibold;
+}
+
 .form-input {
-    @apply w-full bg-blue-900 bg-opacity-40 border border-slate-600 rounded-lg py-2 px-4 text-white placeholder-slate-400;
-    @apply focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-shadow;
+    @apply w-full bg-gray-800 bg-opacity-50 border border-slate-600 rounded-lg py-3 px-4 text-white placeholder-slate-400;
+    @apply focus:outline-none focus:ring-2 focus:ring-[#f59e0b] focus:border-transparent transition-shadow duration-300;
+}
+
+.form-button {
+    @apply w-full bg-[#f59e0b] text-white font-bold py-3 px-6 rounded-full cursor-pointer text-lg;
+    @apply hover:bg-[#d97706] transition-colors duration-300;
 }
 
 /* --- WHATSAPP BUTTON --- */
@@ -177,4 +215,24 @@ header nav a.active::after {
 
 .contact-button {
     @apply inline-block text-center w-full md:w-auto;
+}
+
+
+/* --- ESTILO PARA EL BOTÓN NARANJA --- */
+.btn-naranja {
+    background-color: #f59e0b; 
+    color: white;             
+    padding: 10px 24px;       
+    border-radius: 9999px;   
+    text-decoration: none;   
+    font-weight: bold;       
+    display: inline-block;   
+    border: none;            
+    cursor: pointer;         
+    text-align: center;      
+    transition: background-color 0.3s ease;
+}
+
+.btn-naranja:hover {
+    background-color: #d97706;
 }
