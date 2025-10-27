@@ -12,22 +12,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-     <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
-         <div class="container mx-auto flex justify-between items-center p-4 text-white">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12"></a>
-            <nav class="hidden md:flex space-x-8 items-center font-semibold">
+
+
+    <header class="bg-black bg-opacity-50 fixed w-full top-0 z-40 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center p-4 text-white">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center font-semibold nav-links">
+                <a href="index.html">Inicio</a>
                 <a href="servicios.html">Servicios</a>
                 <a href="proyectos.html">Proyectos</a>
                 <a href="jugueteria.html">Juguetería</a>
-                <a href="contacto.html" class="text-orange-500">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            <button id="menu-btn" class="md:hidden block text-white focus:outline-none">
-                 <i class="fas fa-bars fa-lg"></i>
+            <a href="https://wa.me/5218662362913?text=Hola,%20me%20gustaría%20cotizar%20un%20evento%20pirotécnico." target="_blank" class="btn-naranja hidden md:inline-block">
+                Cotiza tu Evento
+            </a>
+            <button id="menu-btn" class="md:hidden block text-white focus:outline-none relative h-6 w-6">
+                 <i class="fas fa-bars fa-lg absolute"></i>
+                 <i class="fas fa-times fa-lg absolute"></i>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden nav-links">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Inicio</a>
             <a href="servicios.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Servicios</a>
             <a href="proyectos.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Proyectos</a>
             <a href="jugueteria.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Juguetería</a>
@@ -42,40 +52,68 @@
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Contacta con Nosotros</h1>
                     <p class="text-gray-400 max-w-2xl mx-auto">¿Listo para hacer que tu evento sea inolvidable? Déjanos un mensaje.</p>
                 </div>
-                <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
-                    <div class="md:w-1/2 w-full">
-                        <div class="bg-blue-900 bg-opacity-40 p-8 rounded-lg mb-6 fade-in-on-scroll">
-                            <h3 class="text-xl font-bold flex items-center"><i class="fab fa-whatsapp text-green-500 mr-3"></i>WhatsApp</h3>
-                            <p class="text-lg text-gray-300">866 236 2913</p>
-                        </div>
-                        <div class="bg-blue-900 bg-opacity-40 p-8 rounded-lg fade-in-on-scroll" style="transition-delay: 150ms;">
-                            <h3 class="text-xl font-bold flex items-center"><i class="fas fa-envelope text-orange-500 mr-3"></i>Correo Electrónico</h3>
-                            <p class="text-lg text-gray-300">contacto@pirona.com.mx</p>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+                    <div class="w-full space-y-6">
+                        <a href="https://wa.me/5218662362913?text=Hola,%20quiero%20cotizar%20un%20evento." target="_blank" class="bg-blue-900 bg-opacity-40 p-8 rounded-lg flex items-center gap-4 hover:bg-opacity-60 transition-colors duration-300 fade-in-on-scroll">
+                            <i class="fab fa-whatsapp text-green-400 fa-3x"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">WhatsApp</h3>
+                                <p class="text-lg text-gray-300">866 236 2913</p>
+                            </div>
+                        </a>
+                        <a href="mailto:contacto@pirona.com.mx" class="bg-blue-900 bg-opacity-40 p-8 rounded-lg flex items-center gap-4 hover:bg-opacity-60 transition-colors duration-300 fade-in-on-scroll" style="transition-delay: 150ms;">
+                            <i class="fas fa-envelope text-orange-500 fa-3x"></i>
+                            <div>
+                                <h3 class="text-xl font-bold">Correo Electrónico</h3>
+                                <p class="text-lg text-gray-300">contacto@pirona.com.mx</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="md:w-1/2 w-full fade-in-on-scroll" style="transition-delay: 300ms;">
-                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="contact" />
-                            <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
-                            <div class="mb-4">
-                                <label for="name" class="block text-slate-300 mb-2">Tu Nombre</label>
-                                <input type="text" id="name" name="name" class="form-input" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-slate-300 mb-2">Tu Correo Electrónico</label>
-                                <input type="email" id="email" name="email" class="form-input" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block text-slate-300 mb-2">Mensaje</label>
-                                <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="w-full btn-primary text-lg">
-                                    Enviar Mensaje
-                                </button>
-                            </div>
-                        </form>
+                    <div class="w-full fade-in-on-scroll" style="transition-delay: 300ms;">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
+        
+        <div class="mb-4">
+            <label for="name" class="block text-slate-300 mb-2 font-semibold">Tu Nombre</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="w-full bg-gray-800 bg-opacity-50 border border-slate-600 rounded-lg py-3 px-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#f59e0b] focus:border-transparent transition-shadow duration-300" 
+                required>
+        </div>
+        
+        <div class="mb-4">
+            <label for="email" class="block text-slate-300 mb-2 font-semibold">Tu Correo Electrónico</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="w-full bg-gray-800 bg-opacity-50 border border-slate-600 rounded-lg py-3 px-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#f59e0b] focus:border-transparent transition-shadow duration-300" 
+                required>
+        </div>
+        
+        <div class="mb-6">
+            <label for="message" class="block text-slate-300 mb-2 font-semibold">Mensaje</label>
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                class="w-full bg-gray-800 bg-opacity-50 border border-slate-600 rounded-lg py-3 px-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#f59e0b] focus:border-transparent transition-shadow duration-300" 
+                required></textarea>
+        </div>
+        
+        <div>
+            <button 
+                type="submit" 
+                class="w-full bg-[#f59e0b] hover:bg-[#d97706] text-white font-bold py-3 px-6 rounded-full cursor-pointer text-lg transition-colors duration-300">
+                Enviar Mensaje
+            </button>
+        </div>
+    </form>
+</div>
                     </div>
                 </div>
             </div>
@@ -87,20 +125,23 @@
                     <h2 class="text-4xl font-bold">Nuestra Ubicación</h2>
                     <p class="mt-2 text-gray-400">Ofrecemos servicio a nivel nacional.</p>
                 </div>
-                <div class="h-96 rounded-lg overflow-hidden shadow-2xl fade-in-on-scroll">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.344440625368!2d-100.9272986854196!3d25.42676998378939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86880d3811f3d67b%3A0x7d2e078c1b6f001!2sCatedral%20de%20Santiago%2C%20Saltillo!5e0!3m2!1ses!2smx!4v1664589980000" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </section>
+                <div class="w-full flex justify-center px-4">
+
+    <div class="w-full max-w-4xl h-96 rounded-lg overflow-hidden shadow-2xl fade-in-on-scroll">
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1218974188214!2d-99.11023562569633!3d19.779998029496667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d18b8fcd84e2a1%3A0xee149df29ba84dd!2sPIRONA%20(JUEGOS%20PIROTECNICOS%20NACIONALES)!5e1!3m2!1ses!2smx!4v1759772324615!5m2!1ses!2smx" 
+            class="w-full h-full" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         
+    </div>
+
+</div>
+
         <section id="faq" class="py-20">
             <div class="container mx-auto px-6 max-w-3xl">
                 <h2 class="text-4xl font-bold text-center mb-12 fade-in-on-scroll">Preguntas Frecuentes</h2>
@@ -117,12 +158,67 @@
             </div>
         </section>
     </main>
-    
-    <footer class="bg-black bg-opacity-30 py-8 text-center text-gray-400">
-        <div class="container mx-auto">
-             <p>© 2025 PIRONA - Fuegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+
+<footer class="bg-gray-900 text-slate-300 py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div>
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo de Pirona Pirotecnia" class="h-12 mb-4">
+                </a>
+                <p class="text-slate-400">Iluminando tus momentos más especiales con espectáculos que inspiran asombro.</p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Navegación</h3>
+                <ul class="space-y-2">
+                    <li><a href="servicios.html" class="hover:text-orange-500 transition-colors">Servicios</a></li>
+                    <li><a href="proyectos.html" class="hover:text-orange-500 transition-colors">Proyectos</a></li>
+                    <li><a href="jugueteria.html" class="hover:text-orange-500 transition-colors">Juguetería</a></li>
+                    <li><a href="contacto.html" class="hover:text-orange-500 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto</h3>
+                <ul class="space-y-2 text-slate-400">
+                    <li class="flex items-center">
+                        <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+                        <span>866 236 2913</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-orange-500 mr-2"></i>
+                        <span>contacto@pirona.com.mx</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Síguenos</h3>
+                <div class="flex space-x-4">
+                    <a href="#" aria-label="Facebook" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-tiktok fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="text-slate-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-    </footer>
+
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-slate-500">
+            <p>© 2025 PIRONA - Juegos Pirotécnicos Nacionales. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
